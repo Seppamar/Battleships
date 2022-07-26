@@ -6,17 +6,16 @@ import java.util.ArrayList;
  * vi gör simplare version med arraylist för att ändra på värde
  */
 public class Map {
-    
-    public void newmap() {
+
+
+
+    public ArrayList<Integer> newmap() {
         ArrayList<Integer> map  = new ArrayList<>();
         //vi lägger till 5 element av 0, vi får en tom map
         for(int i = 0; i < 5; i ++){
             map.add(i, 0);
         }
-        
-
-        
-        
+        return map;
     }
     
 }
