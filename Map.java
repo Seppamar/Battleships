@@ -1,20 +1,21 @@
+import java.util.ArrayList;
+
 /**
  * Map, vad skall dess state, eller instansvariabler vara? 
- * hur är det med setters och getters? 
+ * hur är det med setters och getters? instansvariabler?
+ * vi gör simplare version med arraylist för att ändra på värde
  */
 public class Map {
+    
     public void newmap() {
-        int map[][]  = new int[3][3];
-        
-        //vi går igenom rows
-        for (int i = 0; i < map.length; i ++){
-            System.out.println();
-            //nested loop möjliggör gå igenom columns
-            for(int j = 0; j < map[i].length; j++){
-                System.out.println(map[i][j] + " ");
-            }
-            
+        ArrayList<Integer> map  = new ArrayList<>();
+        //vi lägger till 5 element av 0, vi får en tom map
+        for(int i = 0; i < 5; i ++){
+            map.add(i, 0);
         }
+        
+
+        
         
     }
     
